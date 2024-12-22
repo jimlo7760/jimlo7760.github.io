@@ -621,7 +621,6 @@ small {
 @media (max-width: 992px) {
   main {
     padding-left: 0px;
-    padding-top: 64px;
   }
   ul.side-nav a {
     line-height: 100%;
