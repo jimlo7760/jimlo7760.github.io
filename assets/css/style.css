@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(0, 77, 64, 0.4); 
+  border: 6px solid rgba(0, 77, 64, 0.4);
   border-radius: 50% !important;
 }
 
@@ -48,18 +48,21 @@
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
+  background-color: #ECF0F1;
 }
 
 .github {
   color: black;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+  background-color: #2C3E50;
 }
 
 .linkedin {
   color: #0077b5;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+  background-color: #2C3E50;
 }
 
 .angellist {
@@ -87,6 +90,7 @@
   color: #F6007C;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+  background-color: #2C3E50;
 }
 
 .instagram:hover {
@@ -97,6 +101,7 @@
   color: #39E259;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+  background-color: #2C3E50;
 }
 
 .whatsapp:hover {
@@ -108,9 +113,9 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: #fff;
-  color: #00796b;
-  border: 2px solid #fff;
+  background: #0080b6;
+  color: #fff;
+  border: 2px solid #34495E;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -137,7 +142,7 @@
   padding: 11px 35px;
   background: none;
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #34495E;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -151,8 +156,8 @@
 }
 
 .contactme:hover {
-  color: #00796b;
-  background-color: white;
+  color: #ECF0F1;
+  background-color: #0080b6;
 }
 /* main body */
 
@@ -350,7 +355,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #2C3E50 repeat;
   position: relative;
 }
 
@@ -386,7 +391,6 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0;
   position: absolute;
@@ -505,7 +509,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #2980B9 !important;
 }
 
 #skills .card.large {
@@ -581,7 +585,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: #2980B9 !important;
 }
 
 /* .teal-text {
@@ -591,7 +595,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: #0080b6 !important;
 }
 
 /* .teal {
