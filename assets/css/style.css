@@ -447,7 +447,7 @@ h3 {
   text-transform: uppercase;
 }
 
-#experience .card-action {
+#experience .card-action, #publication .card-action {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
@@ -603,8 +603,45 @@ small {
 } */
 
 @media (min-width: 1200px) {
-  #experience .container {
+  #experience .container, #publication .container {
     width: 860px;
+  }
+}
+
+/* Place the role beside the title instead of on top of it, so long titles and roles wrap rather than overlap */
+@media (min-width: 993px) {
+  #experience .card .card-content {
+    container-type: inline-size;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #experience .card .card-content > .row {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  /* Size the logo column from the full card width (plus the row's -0.75rem side margins) so titles stay
+     aligned across cards */
+  #experience .card .card-content > .row > .col.m2 {
+    width: calc(16.6667cqw + 0.25rem);
+  }
+  #experience .card .card-content > .row > .col.m10 {
+    width: calc(100% - 16.6667cqw - 0.25rem);
+  }
+  #experience .card .card-content > .role {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 260px;
+    margin-bottom: 20px;
+    padding: 0 18px 10px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+  }
+  /* Flex items don't collapse margins; the row's margin-bottom already provides the spacing */
+  #experience .card .card-content > ul {
+    flex-basis: 100%;
+    margin-top: 0;
   }
 }
 
