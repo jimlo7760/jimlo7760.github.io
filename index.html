@@ -191,12 +191,14 @@
 
             // Initialize images
             for (let index = 0; index < totalImages; index++) {
-                let x, y;
+                let x, y, attempts = 0;
 
+                // Stop searching after a while: on narrow screens not every image fits without
+                // overlap, and an unbounded loop freezes the page (collisions resolve while moving)
                 do {
                     x = Math.random() * (box.offsetWidth - imageSize);
                     y = Math.random() * (box.offsetHeight - imageSize);
-                } while (isOverlapping(x, y));
+                } while (isOverlapping(x, y) && ++attempts < 1000);
 
                 const img = document.createElement('img');
                 img.src = `assets/img/freely-img/image${index + 1}.png`; // Assuming images are named image1.png, image2.png, etc.
