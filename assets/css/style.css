@@ -91,6 +91,10 @@ h1 { font-weight: 700; font-size: clamp(46px, 7.2vw, 88px); line-height: .93; le
 h1 .alias { display: block; color: var(--accent); }
 .lede { font-size: clamp(17px, 1.6vw, 19px); color: var(--fg); max-width: 40ch; margin: 22px 0 26px; }
 .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+.socials { display: flex; gap: 8px; }
+.icon-btn { width: 40px; height: 38px; display: inline-grid; place-items: center; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); transition: border-color .15s, color .15s; }
+.icon-btn:hover { border-color: var(--accent); color: var(--accent); }
+.icon-btn svg { width: 18px; height: 18px; fill: currentColor; }
 .graph-panel { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
 #graph { display: block; width: 100%; height: 440px; touch-action: none; cursor: crosshair; }
 .graph-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; border-top: 1px solid var(--line); font: 12px/1.5 var(--mono); color: var(--muted); }
