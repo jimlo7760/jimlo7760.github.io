@@ -1,14 +1,8 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width initial-scale=1"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-
-    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -24,29 +18,15 @@
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');</script>
     <!-- End Google Tag Manager -->
-
-    <!-- Materialize - Compiled and minified CSS-->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"/>
-    <!-- Font Awesome Icon - CSS-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
-    <!-- Custom Styles-->
-    <link rel="stylesheet" href="/assets/css/style.css"/>
     <title>Jim Lu | Software Engineer</title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <!-- Open Graph-->
+    <meta name="description" content="Yanzhen (Jim) Lu: M.S. Computer Science student at Columbia, machine-learning researcher and full-stack developer."/>
+    <!-- Open Graph -->
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Jim Lu | Software Engineer"/>
-    <meta property="og:description" content="Software Engineer"/>
-    <meta property="og:url" content="https://jimlo7760.github.io/"/>
+    <meta property="og:description" content="M.S. CS at Columbia, machine-learning researcher and full-stack developer."/>
+    <meta property="og:url" content="https://www.jimjimlu.com/"/>
     <meta property="og:site_name" content="Jim Lu | Software Engineer"/>
-    <meta property="article:publisher" content="https://jimlo7760.github.io/"/>
-    <!-- Twitter -->
-    <meta name="description"
-          content="Software Developer with a passion for backend development and artificial intelligence."/>
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png"/>
@@ -63,12 +43,16 @@
     <link rel="manifest" href="/assets/img/favicon/manifest.json"/>
     <meta name="msapplication-TileColor" content="#ffffff"/>
     <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png"/>
-    <meta name="theme-color" content="#ffffff"/>
+    <meta name="theme-color" content="#F3F6F8" media="(prefers-color-scheme: light)"/>
+    <meta name="theme-color" content="#0A131A" media="(prefers-color-scheme: dark)"/>
     <meta name="robots" content="index, follow"/>
     <!-- Google Site Verification for indexing -->
     <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
 </head>
-
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -76,660 +60,159 @@
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 
+<nav class="nav" aria-label="Sections">
+  <div class="col">
+    <a class="brand" href="#top">Jim Lu<span>.</span></a>
+    <div class="navlinks">
+      <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#publication">Publication</a><a href="#contact">Contact</a>
+    </div>
+    <div class="nav-tools">
+      <button class="btn" id="open-pal" type="button" aria-label="Jump anywhere (Command K)">Jump <kbd>⌘K</kbd></button>
+      <button class="btn" id="theme" type="button" aria-label="Switch color theme">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"></path></svg>
+        <span id="theme-label">Dark</span>
+      </button>
+    </div>
+  </div>
+</nav>
+<noscript><p class="col noscript">The experience, projects and education lists need JavaScript. The <a href="https://drive.google.com/file/d/16nb2pvc2ecKvDa4gyiviOFnZAhMQwO5a/view?usp=sharing">résumé PDF</a> has the same details.</p></noscript>
 
-<!-- Main Content-->
+<header id="top" class="col hero">
+  <div>
+    <ul class="now">
+      <li>Open to SWE internships</li>
+      <li>M.S. Computer Science, Columbia</li>
+      <li>Researcher, RPI DSP Lab</li>
+    </ul>
+    <h1>Yanzhen <span class="alias">(Jim) Lu</span></h1>
+    <p class="lede">I build machine-learning systems and the software around them, from GNN robustness studies and plasma-simulation classifiers to a real-time MIDI piano game.</p>
+    <div class="ctas">
+      <a class="btn primary" href="https://drive.google.com/file/d/16nb2pvc2ecKvDa4gyiviOFnZAhMQwO5a/view?usp=sharing" target="_blank" rel="noopener">Résumé</a>
+      <button class="btn" type="button" data-copy="jimlu8030@gmail.com">Copy email</button>
+      <div class="socials">
+        <a class="icon-btn" href="https://github.com/jimlo7760" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/yanzhenlu/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4c-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.91 39.91 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186zM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009s9.851-22.014 22.008-22.016c12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97zM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"></path></svg></a>
+        <a class="icon-btn" href="https://www.instagram.com/jimmmlyz/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"></path></svg></a>
+        <a class="icon-btn" href="https://wa.me/+18382405388" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="graph-panel">
+    <canvas id="graph" role="img" aria-label="Network linking Jim's roles, projects and paper to the skills each one used"></canvas>
+    <p class="graph-hint" id="graph-hint">Hover a node to trace a skill. Click a skill to filter the page.</p>
+    <div class="graph-bar">
+      <div class="legend">
+        <span><i class="sw research"></i>research</span><span><i class="sw teaching"></i>teaching</span><span><i class="sw industry"></i>industry</span>
+        <span><i class="sw project"></i>project</span><span><i class="sw skill"></i>skill</span>
+      </div>
+      <button class="btn ghost" id="poison" type="button" aria-pressed="false">Poison the graph</button>
+    </div>
+  </div>
+</header>
+
+<section class="col impact" aria-label="Highlights">
+  <div class="fig"><b>600+</b><span>students mentored as a teaching assistant</span></div>
+  <div class="fig"><b>3,800</b><span>results in the GNN poisoning-robustness study</span></div>
+  <div class="fig"><b>80%+</b><span>accuracy spotting magnetic reconnection events</span></div>
+  <div class="fig"><b>95%</b><span>accuracy detecting and solving Connect 4 boards</span></div>
+  <div class="fig"><b>3.86</b><span>GPA at RPI, magna cum laude</span></div>
+</section>
+
 <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="col-md-9">
-                <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-                    <div class="caption">
-                        <h2>Hi, I'm <span class="teal">Jim Lu.</span></h2>
-                        <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#0080b6"></span>
-                        </h5>
-                        <h5 style="color: #ECF0F1">Versatile full-stack developer and researcher with a passion for open-source projects,
-                            combining strong technical skills in AI/ML, web development, and software engineering with
-                            hands-on experience leading cross-functional teams to deliver innovative solutions for
-                            real-world challenges.</h5>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/yanzhenlu/" target="_blank">
-                            <button class="icon-btn linkedin">
-                                <i class="fa fa-linkedin"></i>
-                            </button>
-                        </a>
-                        <a href="https://github.com/jimlo7760" target="_blank">
-                            <button class="icon-btn github">
-                                <i class="fa fa-github"></i>
-                            </button>
-                        </a>
-                        <a href="https://www.instagram.com/jimmmlyz/" target="_blank">
-                            <button class="icon-btn instagram">
-                                <i class="fa fa-instagram"></i>
-                            </button>
-                        </a>
-                        <a href="https://wa.me/+18382405388" target="_blank">
-                            <button class="icon-btn whatsapp">
-                                <i class="fa fa-whatsapp"></i>
-                            </button>
-                        </a>
+  <section id="experience" class="sec col">
+    <div class="sec-head">
+      <div><p class="eyebrow">git log --graph · 8 roles · 2020 to now</p><h2>Experience</h2></div>
+      <p class="sec-note">Each colored line is a role: it branches off when the role started and merges back when it ended. Hover a line or a row to match them up.</p>
+    </div>
+    <div class="map-wrap">
+      <div class="map-legend"><span><i class="sw research"></i>research</span><span><i class="sw teaching"></i>teaching</span><span><i class="sw industry"></i>industry</span><span>○ milestone</span><span>→ still ongoing</span></div>
+      <div class="map-scroll"><svg id="map" viewBox="0 0 1000 262" role="img" aria-label="Timeline of Jim's roles from 2020 to 2026; the list below has the same information"></svg></div>
+    </div>
+    <div class="rows" id="rows"></div>
+  </section>
 
-                    </div>
-                    <div class='buttons'>
-                        <a href="https://drive.google.com/file/d/1ZNQ-yQ4hgY6fN2oYyC8BO7JitwSUG9_M/view?usp=drive_link" target="_blank" class="readme">Resume</a>
-                        <a href="#contact" class="contactme">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="projects" class="sec col">
+    <div class="sec-head">
+      <div><p class="eyebrow">4 builds · Rensselaer Center for Open Source · 2023 to 2025</p><h2>Projects</h2></div>
+      <p class="sec-note">Each preview is a small working model of what the project does. Tap the Wind Tempo keys, or press A to K on a keyboard.</p>
+    </div>
+    <div class="bento" id="bento"></div>
+  </section>
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-        <h3 class="page-title white-text teal">About</h3>
-        <div class="container flow-text">
-            <p>
-                I am a Computer Science junior at Rensselaer Polytechnic Institute, with a keen interest in full-stack
-                development, machine learning, and auditing. In the past few years, I have experience in collaborative
-                project leadership, technical research, and open-source contributions, with a demonstrated commitment to
-                improving operational efficiency and user experience across academic and professional settings.
+  <section id="education" class="sec col">
+    <div class="sec-head">
+      <div><p class="eyebrow">M.S. in progress · B.S. magna cum laude</p><h2>Education</h2></div>
+    </div>
+    <div class="edu-grid" id="edu"></div>
+  </section>
 
-            </p>
-            <p>
-            <ul>
-                <li><b>Programming Language:</b> C, C++, Python, Java, PHP, R, Dafny, Swift</li>
-                <li><b>Web Development</b> HTML/CSS, REACT, JavaScript & jQuery, TypeScript</li>
-                <li><b>Libraries:</b> NumPy, Pandas, OpenCV, YOLO, PyTorch, TensorFlow, Matplotlib</li>
-                <li><b>Databases:</b> MySQL, PostgreSQL</li>
-                <li><b>Other language:</b> MIPS, Verilog, Markdown, LaTex, Raspberry Pi</li>
-            </ul>
+  <section id="publication" class="sec col">
+    <div class="sec-head">
+      <div><p class="eyebrow">IEEE Xplore · July 2022</p><h2>Publication</h2></div>
+    </div>
+    <article class="cite" data-id="paper" data-skills="Computer Vision|Machine Learning">
+      <div>
+        <p class="eyebrow">Co-author</p>
+        <h3>Vision: Overview of Vehicle Body Violation Target Detection Algorithms</h3>
+        <p class="c-by">Y. Lu and co-authors · IEEE Xplore document 9832128 · July 2022</p>
+        <p class="c-sum">Compared local and cloud-based AI platforms, then trained and fine-tuned convolutional neural networks on several datasets, reaching up to 89% accuracy at detecting traffic violations.</p>
+        <div class="chips" style="margin-top:14px" data-chips="Computer Vision|Machine Learning"></div>
+      </div>
+      <div class="c-actions">
+        <a class="btn primary" href="https://ieeexplore.ieee.org/document/9832128" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+        <button class="btn" type="button" id="copy-bib">Copy BibTeX</button>
+      </div>
+      <pre class="bib" id="bib" hidden>@misc{lu2022vision,
+  title        = {Vision: Overview of Vehicle Body Violation Target Detection Algorithms},
+  author       = {Lu, Yanzhen and others},
+  year         = {2022},
+  month        = jul,
+  howpublished = {IEEE Xplore, document 9832128},
+  url          = {https://ieeexplore.ieee.org/document/9832128}
+}</pre>
+    </article>
+  </section>
 
-            </p>
-            <p>
-                I am actively pursuing a Software Development Engineer internship for Summer 2025, where I aim to
-                leverage and expand my expertise within a collaborative, growth-oriented setting.
-            </p>
-            <div class="card box" id="box">
-            </div>
-        </div>
-
-        <script>
-            const box = document.getElementById('box');
-
-            // Configuration
-            const totalImages = 29;
-            const imageSize = 70;
-            const imageData = [];
-
-            // Check for overlapping during initial placement
-            function isOverlapping(newX, newY) {
-                return imageData.some(data => {
-                    const rect1 = {
-                        left: newX,
-                        right: newX + imageSize,
-                        top: newY,
-                        bottom: newY + imageSize
-                    };
-
-                    const rect2 = {
-                        left: data.x,
-                        right: data.x + imageSize,
-                        top: data.y,
-                        bottom: data.y + imageSize
-                    };
-
-                    return !(
-                        rect1.right <= rect2.left ||
-                        rect1.left >= rect2.right ||
-                        rect1.bottom <= rect2.top ||
-                        rect1.top >= rect2.bottom
-                    );
-                });
-            }
-
-            // Initialize images
-            for (let index = 0; index < totalImages; index++) {
-                let x, y;
-
-                do {
-                    x = Math.random() * (box.offsetWidth - imageSize);
-                    y = Math.random() * (box.offsetHeight - imageSize);
-                } while (isOverlapping(x, y));
-
-                const img = document.createElement('img');
-                img.src = `assets/img/freely-img/image${index + 1}.png`; // Assuming images are named image1.png, image2.png, etc.
-                img.alt = `Image ${index + 1}`;
-                img.className = 'image';
-                img.style.transform = `translate(${x}px, ${y}px)`; // Set initial position
-                box.appendChild(img);
-
-                imageData.push({
-                    element: img,
-                    x: x,
-                    y: y,
-                    dx: Math.random() < 0.5 ? 0.5 : -0.5, // Reduced speed for slower movement
-                    dy: Math.random() < 0.5 ? 0.5 : -0.5 // Reduced speed for slower movement
-                });
-            }
-
-            function moveImages() {
-                imageData.forEach(data => {
-                    data.x += data.dx;
-                    data.y += data.dy;
-
-                    // Boundary constraints
-                    if (data.x <= 0) {
-                        data.x = 0;
-                        data.dx *= -1;
-                    }
-                    if (data.x + imageSize >= box.offsetWidth) {
-                        data.x = box.offsetWidth - imageSize;
-                        data.dx *= -1;
-                    }
-                    if (data.y <= 0) {
-                        data.y = 0;
-                        data.dy *= -1;
-                    }
-                    if (data.y + imageSize >= box.offsetHeight) {
-                        data.y = box.offsetHeight - imageSize;
-                        data.dy *= -1;
-                    }
-
-                    // Handle collisions during movement
-                    imageData.forEach(otherData => {
-                        if (data === otherData) return;
-
-                        const rect1 = {
-                            left: data.x,
-                            right: data.x + imageSize,
-                            top: data.y,
-                            bottom: data.y + imageSize
-                        };
-
-                        const rect2 = {
-                            left: otherData.x,
-                            right: otherData.x + imageSize,
-                            top: otherData.y,
-                            bottom: otherData.y + imageSize
-                        };
-
-                        if (!(
-                            rect1.right <= rect2.left ||
-                            rect1.left >= rect2.right ||
-                            rect1.bottom <= rect2.top ||
-                            rect1.top >= rect2.bottom
-                        )) {
-                            // Calculate overlap distances
-                            const overlapX = Math.min(rect1.right - rect2.left, rect2.right - rect1.left);
-                            const overlapY = Math.min(rect1.bottom - rect2.top, rect2.bottom - rect1.top);
-
-                            // Adjust positions to separate images
-                            if (overlapX < overlapY) {
-                                if (data.x < otherData.x) {
-                                    data.x -= overlapX / 2;
-                                    otherData.x += overlapX / 2;
-                                } else {
-                                    data.x += overlapX / 2;
-                                    otherData.x -= overlapX / 2;
-                                }
-                                data.dx *= -1;
-                                otherData.dx *= -1;
-                            } else {
-                                if (data.y < otherData.y) {
-                                    data.y -= overlapY / 2;
-                                    otherData.y += overlapY / 2;
-                                } else {
-                                    data.y += overlapY / 2;
-                                    otherData.y -= overlapY / 2;
-                                }
-                                data.dy *= -1;
-                                otherData.dy *= -1;
-                            }
-                        }
-                    });
-
-                    // Update position
-                    data.element.style.transform = `translate(${data.x}px, ${data.y}px)`;
-                });
-
-                requestAnimationFrame(moveImages);
-            }
-
-            moveImages();
-        </script>
-
-
-
-
-
-
-    </section>
-
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-        <h3 class="page-title white-text teal">Experience</h3>
-        <div class="container">
-
-            <!-- Latest Experience -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col s12 m2" style="padding: 0">
-                            <a href="https://www.rpi.edu/" target="_blank"><img alt="Zhiffy logo"
-                                                                                src="/assets/img/rpi_img.png"
-                                                                                class="responsive-img center-block"/></a>
-                        </div>
-                        <div class="col s12 m10">
-                            <p>
-                  <span class="card-title"><a target="_blank" cursor="pointer"
-                                              class="teal-text hoverline">Machine Intelligence Lab</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="role brown-text text-darken-2">Research Assistant</div>
-                    <ul>
-                        <li>
-                            Conducting research with Professor Ma and his graduate, PhD students on advanced research in
-                            computer vision and large language models in weekly seminars.
-                        </li>
-                        <li>
-                            Preparing technical reports and contributing to academic papers for publication in Nature,
-                            IEEE, etc.
-                        </li>
-                        <li>
-                            <b>Stack: </b> LLM, Computer Vision, Data Analysis
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <span>October 2024 -  Present | Troy, NY</span>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col s12 m2">
-                            <a href="https://www.ey.com/en_us" target="_blank"><img alt="Meditab logo"
-                                                                                    src="/assets/img/ey-logo-black.png"
-                                                                                    class="responsive-img center-block"/></a>
-                        </div>
-                        <div class="col s12 m10" style="padding: 0">
-                            <p>
-                  <span class="card-title"><a href="https://www.ey.com/en_us" target="_blank"
-                                              class="teal-text hoverline">Ernst & Young</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="role brown-text text-darken-2">Auditor</div>
-                    <ul>
-                        <li>
-                            Conducted comprehensive audits for more than 200 clients across various industries,
-                            including internet companies, real estate, vehicle manufacturers, etc, ensuring compliance
-                            with regulatory standards and identifying potential risk areas.
-                        </li>
-                        <li>
-                            Collaborated with five cross-functional teams, from financial to database, to deliver
-                            detailed audit reports, providing valuable insights and recommendations for improving
-                            internal controls and operational efficiency.
-                        </li>
-                        <li>
-                            Utilized advanced auditing software and tools to streamline audit processes mainly on
-                            mid-year review, enhance data accuracy, and support decision-making for client stakeholders.
-                        </li>
-                        <li>
-                            <b>Stack:</b> Auditing, Python, MS Excel, Database, Big Data Analytics
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <span>July 2024 - August 2024</span>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <div class="row">
-                        <div class="col s12 m2">
-                            <a href="https://bgy.gd.cn/?lang=en" target="_blank"><img alt="Meditab logo"
-                                                                                      src="/assets/img/xue_xiao_logodan_du_5-KI4vV7nPo-transformed.webp"
-                                                                                      class="responsive-img center-block"/></a>
-                        </div>
-
-                        <div class="col s12 m10" style="padding: 0">
-                            <p>
-                                <span class="card-title"><a href="https://bgy.gd.cn/?lang=en"
-                                                            class="teal-text hoverline">Guangdong Country Garden School</a></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="role brown-text text-darken-2">Fullstack Developer</div>
-                    <ul>
-                        <li>
-                            Led a UI designer and a fullstack developer to set up adaptive web pages for the most
-                            popular operating systems and integrate intuitive animations with performance optimization.
-                        </li>
-                        <li>
-                            Clarified system demands with Dean of High School by more than 10 meetings, and listened to
-                            feedback when throughout the development process. More than 200 students and 40 teachers
-                            gained convenience from the new system.
-                        </li>
-                        <li>
-                            Gained experience in real-world web workflow, from needs justification, interface design,
-                            and coding, to testing design ensuring reliability and reusability.
-                        </li>
-                        <li>
-                            <b>Stack:</b> HTML, CSS, PHP, MySQL, JavaScript, SWOT Analysis, API Development, Server
-                            Distribution
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-action">
-                    <span>August 2020 - March 2022 | Guangdong, China</span>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-        <h3 class="page-title white-text teal">Projects</h3>
-        <div class="container">
-            <div class="row">
-
-                <div class="col s12 m6 l4">
-                    <div class="card large">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="music streaming app" src="/assets/img/board-solver-logo.png"
-                                 style="height: 100%; width: 100%; object-fit: cover" class="activator"/>
-                        </div>
-                        <div class="card-content">
-      <span class="card-title activator teal-text hoverline">Board Solver App<i
-              class="mdi-navigation-more-vert right"></i></span>
-                            <p style="cursor: default">
-                                An iOS application which leverages computer vision to solve for optimal next moves in
-                                common board games
-                            </p>
-                        </div>
-                        <div class="card-reveal" style="display: flex; flex-direction: column; height: 100%;">
-              <span class="card-title grey-text"><small>Accomplishments</small><i
-                      class="mdi-navigation-close right"></i></span>
-                            <div style="flex: 1; overflow-y: auto; max-height: calc(100% - 120px);">
-                                <ul>
-                                    <li><b>Stack:</b> Swift, YOLO v2, CreateML, ARKit, RealityKit, Figma</li>
-                                    <li>Capture real-time images or video of board games using device camera interface
-                                    </li>
-                                    <li>Process game board state using custom-trained object detection/segmentation
-                                        model
-                                    </li>
-                                    <li>Analyze current game position and calculate optimal next move using game-solving
-                                        algorithms
-                                    </li>
-                                    <li>Display recommended moves through an intuitive visual interface overlaid on the
-                                        camera feed
-                                    </li>
-                                    <li>Support multiple popular board games, starting with Connect 4™ and expandable to
-                                        other games
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-action"
-                                 style="display: flex; justify-content: space-between; align-items: center; background-color: white;">
-                                <span class="blue-grey-text">Sep 2024 - Present</span>
-                                <a aria-label="Visit the GitHub repo for  project"
-                                   href="https://github.com/henryrobbinss/BoardSolverMobile"
-                                   target="_blank" data-position="top" data-tooltip="View Source"
-                                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                        class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 l4">
-                    <div class="card large">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="music streaming app" src="/assets/img/hackRPI-logo.png"
-                                 style="height: 100%; width: 100%; object-fit: cover" class="activator"/>
-                        </div>
-                        <div class="card-content">
-      <span class="card-title activator teal-text hoverline">HackRPI Mobile App<i
-              class="mdi-navigation-more-vert right"></i></span>
-                            <p style="cursor: default">
-                                An iOS & Android App hosts the mobile app for HackRPI X, a hackathon event
-                            </p>
-                        </div>
-                        <div class="card-reveal" style="display: flex; flex-direction: column; height: 100%;">
-              <span class="card-title grey-text"><small>Accomplishments</small><i
-                      class="mdi-navigation-close right"></i></span>
-                            <div style="flex: 1; overflow-y: auto; max-height: calc(100% - 120px);">
-                                <ul>
-                                    <li><b>Stack:</b> React Native, Firebase, UI/UX, API Development</li>
-                                    <li>Seamlessly access real-time updates and event schedules tailored for HackRPI participants through the mobile app.
-                                    </li>
-                                    <li>Stay connected with instant notifications for announcements, workshops, and competition milestones.
-                                        model
-                                    </li>
-                                    <li>Leverage interactive maps and directions to easily navigate the HackRPI event venues.
-                                    </li>
-                                    <li>Participate in community discussions and get live support through an integrated chat feature.
-                                    </li>
-                                    <li>Explore detailed event resources, including mentor contacts, project submission guidelines, and FAQs, directly from the app.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-action"
-                                 style="display: flex; justify-content: space-between; align-items: center; background-color: white;">
-                                <span class="blue-grey-text">Jan 2024 - May 2024</span>
-                                <a aria-label="Visit the GitHub repo for  project"
-                                   href="https://github.com/hack-rpi/HackRPI-Mobile"
-                                   target="_blank" data-position="top" data-tooltip="View Source"
-                                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                        class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col s12 m6 l4">
-                    <div class="card large">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img alt="music streaming app" src="/assets/img/easy-app-logo.png"
-                                 style="height: 100%; width: 100%; object-fit: cover" class="activator"/>
-                        </div>
-                        <div class="card-content">
-      <span class="card-title activator teal-text hoverline">Easy App<i
-              class="mdi-navigation-more-vert right"></i></span>
-                            <p style="cursor: default">
-                                A chrome extension that allows users to autofill job applications, draft application responses, navigate job listings, tweak user resumes to fit job description, and much more!
-                            </p>
-                        </div>
-                        <div class="card-reveal" style="display: flex; flex-direction: column; height: 100%;">
-              <span class="card-title grey-text"><small>Accomplishments</small><i
-                      class="mdi-navigation-close right"></i></span>
-                            <div style="flex: 1; overflow-y: auto; max-height: calc(100% - 120px);">
-                                <ul>
-                                    <li><b>Stack:</b> React, TypeScript, IndexDB, Chrome Extension, UML, Network Engineering</li>
-                                    <li>Instantly fill out job application forms
-                                    </li>
-                                    <li>Manage and navigate through your job listings
-                                    </li>
-                                    <li>Customize your personal info for EasyApp to use
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-action"
-                                 style="display: flex; justify-content: space-between; align-items: center; background-color: white;">
-                                <span class="blue-grey-text">Sep 2023 - Dec 2023</span>
-                                <a aria-label="Visit the GitHub repo for  project"
-                                   href="https://github.com/EasyApp-RPI/EasyApp"
-                                   target="_blank" data-position="top" data-tooltip="View Source"
-                                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                                        class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- ************* -->
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-        <h3 class="page-title white-text teal">Education</h3>
-        <div class="container">
-            <div class="row">
-                <!-- Education -->
-                <div class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p>
-                                <span class="card-title"><a href="https://www.rpi.edu/" target="_blank"
-                                                            class="teal-text hoverline">Rensselaer Polytechnic Institute</a></span>
-                            </p>
-                            <p class="brown-text">New York, USA</p>
-                            <p>
-                                <b>Degree: </b>Bachelor of Science in Computer Science
-                                <br>
-                                <b>GPA: </b>3.83/4.00
-                            </p>
-
-                            <ul>
-                                <p>
-                                    <b>Relevant Courseworks:</b>
-                                <ul>
-                                    <li>Machine Learning from Data</li>
-                                    <li>Intro to Artificial Intelligence</li>
-                                    <li>Database System</li>
-                                    <li>Numerical Computing</li>
-                                    <li>Linear Algebra</li>
-                                    <li>Intro to Algorithm</li>
-                                    <li>Data Structure</li>
-                                    <li>Foundation of Computer Science (Discrete Math)</li>
-                                    <li>Computer Organization</li>
-                                    <li>Principal of Software</li>
-                                </ul>
-                                </p>
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="col s12 m6 l6">
-                    <div class="card">
-                        <div class="card-content">
-                            <p>
-                  <span class="card-title"><a
-                          href="https://bgy.gd.cn/?lang=en"
-                          target="_blank" class="teal-text hoverline">Guangdong Country Garden School</a></span>
-                            </p>
-                            <p class="brown-text">Guangdong, China</p>
-                            <p>
-                                <b>Degree: </b>International Baccalaureate
-                                <br>
-                            </p>
-
-                            <ul>
-                                <p>
-                                    <b>Relevant Courseworks:</b>
-                                <ul>
-                                    <li>Computer Science (Higher Level)</li>
-                                    <li>Mathematics: Analysis and Approach (Higher Level)</li>
-                                    <li>Physics (Standard Level)</li>
-                                    <li>Digital Design</li>
-                                </ul>
-                                </p>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-        <h3 class="page-title white-text teal">Contact</h3>
-        <div class="container">
-            <p>
-                <a aria-label="Call Jim" data-position="top" data-tooltip="Call Jim" href="tel:+18382405388"
-                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                        class="fa fa-phone"></i><a
-                        aria-label="Call Jim" href="tel:+18382405388">+1 8382405388</a></a>
-            </p>
-            <p>
-                <a aria-label="Email Jim" href="mailto:jimlo7760@gmail.com" target="_blank" data-position="top"
-                   data-tooltip="Email Jim"
-                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                        class="fa fa-envelope"></i><a aria-label="Email Jim" href="mailto:jimlo7760@gmail.com"
-                                                      class="hoverline">jimlo7760@gmail.com</a></a>
-            </p>
-            <p>
-                <a aria-label="View Jim on GitHub" href="https://github.com/jimlo7760" target="_blank"
-                   data-position="top" data-tooltip="View Jim on GitHub"
-                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                        class="fa fa-github"></i><a
-                        aria-label="Jim on Github" href="https://github.com/jimlo7760" class="hoverline"
-                        target="_blank">github.com/jimlo7760</a></a>
-            </p>
-            <p>
-                <a aria-label="View Jim on LinkedIn" href="https://www.linkedin.com/in/yanzhenlu/" target="_blank"
-                   data-position="top" data-tooltip="View Jim on LinkedIn"
-                   class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                        class="fa fa-linkedin"></i><a aria-label="Jim on LinkedIn"
-                                                      href="https://www.linkedin.com/in/yanzhenlu/"
-                                                      class="hoverline"
-                                                      target="_blank">linkedin.com/in/yanzhenlu/</a></a>
-            </p>
-        </div>
-    </section>
+  <section id="contact" class="sec col">
+    <div class="sec-head">
+      <div><p class="eyebrow">New York, NY</p><h2>Contact</h2></div>
+      <p class="sec-note">Email is the fastest way to reach me.</p>
+    </div>
+    <div class="term">
+      <p><span class="ps">jim@nyc:~$</span> whoami</p>
+      <p class="out">Yanzhen (Jim) Lu · M.S. CS at Columbia · researcher and full-stack developer</p>
+      <p><span class="ps">jim@nyc:~$</span> contact --list</p>
+      <p><span class="k">email</span><a href="mailto:jimlu8030@gmail.com">jimlu8030@gmail.com</a><button class="copy" type="button" data-copy="jimlu8030@gmail.com">copy</button></p>
+      <p><span class="k">phone</span><a href="tel:+16469799455">+1 (646) 979-9455</a></p>
+      <p><span class="k">github</span><a href="https://github.com/jimlo7760" target="_blank" rel="noopener">github.com/jimlo7760</a></p>
+      <p><span class="k">linkedin</span><a href="https://www.linkedin.com/in/yanzhenlu/" target="_blank" rel="noopener">linkedin.com/in/yanzhenlu</a></p>
+      <p><span class="k">instagram</span><a href="https://www.instagram.com/jimmmlyz/" target="_blank" rel="noopener">instagram.com/jimmmlyz</a></p>
+      <p><span class="k">whatsapp</span><a href="https://wa.me/+18382405388" target="_blank" rel="noopener">wa.me/+18382405388</a></p>
+      <p><span class="k">résumé</span><a href="https://drive.google.com/file/d/16nb2pvc2ecKvDa4gyiviOFnZAhMQwO5a/view?usp=sharing" target="_blank" rel="noopener">open PDF</a></p>
+      <p><span class="ps">jim@nyc:~$</span> <span class="cursor"></span></p>
+    </div>
+  </section>
 </main>
 
-<!-- typed.js -->
-<script src="assets/vendor/typed.js/typed.min.js"></script>
-<script type="text/javascript">
-    var typed = new Typed('.typing', {
-        strings: ["Full-stack Developer", "Student at RPI", "RA of Machine Learning Lab", "TA of Data Structure", "Author of Vision Algorithm publication"],
-        loop: true,
-        typeSpeed: 80,
-        backSpeed: 40
-    });
-</script>
+<footer class="col">
+  <span>© 2026 Yanzhen (Jim) Lu · jimjimlu.com</span>
+  <span>Press <kbd>A</kbd>–<kbd>K</kbd> to play piano · <kbd>⌘</kbd> <kbd>K</kbd> to jump anywhere</span>
+</footer>
 
+<div class="filterbar" id="filterbar" role="status" hidden><span id="filter-text"></span><button type="button" id="filter-next">Next match</button><button type="button" id="filter-clear">Clear</button></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<div class="pal-back" id="pal" hidden>
+  <div class="pal" role="dialog" aria-modal="true" aria-label="Jump anywhere">
+    <input id="pal-q" type="text" placeholder="Jump to a section, filter by a skill, copy email…" autocomplete="off" aria-controls="pal-list">
+    <ul id="pal-list" role="listbox"></ul>
+  </div>
+</div>
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="dlg-head"><div><p class="eyebrow" id="dlg-meta"></p><h3 id="dlg-title"></h3></div><button class="btn" type="button" id="dlg-close">Close</button></div>
+  <div class="dlg-body" id="dlg-body"></div>
+</dialog>
 
-<!-- jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-<!-- Materialize - Compiled and minified JavaScript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-<script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-        $(".scrollspy").scrollSpy()
-        // Initialize collapse button
-        $(".button-collapse").sideNav({
-            menuWidth: 190, // Default is 240
-            edge: "left", // Choose the horizontal origin
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        })
-    })
-</script>
+<script src="/assets/js/content.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
-
 </html>
